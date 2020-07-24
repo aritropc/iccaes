@@ -1,0 +1,765 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to right,rgba(37, 114, 187, 0.603),rgba(194, 179, 179, 0.596));
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.4s;
+}
+
+.logo a{
+    color: #f5f5f5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.4s;
+    text-shadow: 1px 1px 1px rgba(187, 57, 34, 0.829),1px 2px 1px rgba(187, 57, 34, 0.829),1px 3px 1px rgba(187, 57, 34, 0.829),1px 4px 1px rgba(187, 57, 34, 0.829);
+}
+
+.logo a:hover{
+    background: rgba(114, 110, 131, 0.692);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(253, 246, 246);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+nav.sticky{
+    padding: 5px;
+    background: rgb(231, 229, 240);
+}
+
+nav.sticky .nav-links a{
+    color: black;
+}
+
+nav.sticky .logo a{
+    color: black;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: snow;
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        z-index: 2;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: rgba(231, 229, 240, 0.815);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .headline{
+        letter-spacing: 3px;
+        font-size: 60px;
+    }
+
+    .nav-links a{
+        color: black;
+    }
+
+     .contact-area iframe{
+        width: 300px;
+        height: 300px;
+    } 
+
+    .banner-area .text-part h1{
+        color: white;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: 'Rowdies', cursive;
+        font-weight: 100;
+        text-shadow: 1px 1px 1px rgb(43, 40, 39),1px 2px 1px rgb(43, 40, 39),1px 3px 1px rgb(43, 40, 39),1px 4px 1px rgb(43, 40, 39);
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    .banner-area .text-part h3{
+        bottom: 10%;
+        right: 50%;
+        font-size: 20px;
+    }
+
+    .banner-area .text-part #item-1{
+        opacity: 0;
+    }
+
+    .banner-area .text-part #item-2{
+        opacity: 0;
+    }
+
+    .committee-area ul{
+        list-style: none;
+    }
+    .contact-area .row-3 iframe{
+        padding-bottom: 15px;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.nav-links a:hover{
+    background: rgba(114, 110, 131, 0.692);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.banner-area{
+    position: relative;
+    /* background: linear-gradient(to top,rgb(0,0,0),rgb(10,200,250)); */
+    background-image: url(https://wallpaperaccess.com/full/1883870.jpg);
+    width: 100%;
+    height: 120vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-area::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+}
+
+.banner-area .text-part h1{
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Rowdies', cursive;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgb(43, 40, 39),1px 2px 1px rgb(43, 40, 39),1px 3px 1px rgb(43, 40, 39),1px 4px 1px rgb(43, 40, 39);
+    margin: 30px;
+    font-size: 40px;
+    border-bottom: none;
+}
+
+.banner-area .text-part h3{
+    color: rgb(200, 255, 0);
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    text-align: center;
+    letter-spacing: 2px;
+    /* font-family: 'Rowdies', cursive; */
+    font-family: cursive;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgb(24, 23, 22),1px 2px 1px rgb(24, 23, 22),1px 3px 1px rgb(24, 23, 22),1px 4px 1px rgb(24, 23, 22);
+    font-size: 40px;
+}
+
+.banner-area .text-part #item-1{
+    background: transparent;
+    z-index: 1;
+    position: absolute;
+    font-family: monospace;
+    top: 45%;
+    left: 25%;
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+}
+
+.banner-area .text-part #item-2{
+    background: transparent;
+    z-index: 1;
+    position: absolute;
+    font-family: 'Rowdies', cursive;
+    top: 50%;
+    left: 30%;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+}
+
+.about-area{
+    background-image: url(https://jooinn.com/images/laboratory-experiment-5.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-area,.registration-area,.speakers-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.text-part{
+    width: 80%;
+    height: 80%;
+}
+
+.text-part h1{
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+    color: rgba(192, 30, 30, 0.87);
+    border-bottom: 2px solid rgba(36, 31, 31, 0.87);
+    padding-bottom: 10px;
+}
+
+.text-part p{
+    font-size: 25px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.text-part ul{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.text-part ul li{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.topic-area,.committee-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.topic-area .list,.committee-area .list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.topic-area .text-part,.committee-area .text-part{
+    width: 90%;
+}
+
+.committee-area h1{
+    padding-top: 10px;
+}
+
+.committee-area .text-part{
+    background-color: rgba(231, 229, 240, 0.815);
+    padding: 10px;
+}
+
+.topic-area ul{
+    list-style: none;
+}
+
+.topic-area{
+    background-image: url(https://img4.goodfon.com/wallpaper/nbig/9/59/papers-classification-work-fingers-research.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topic-area .text-part{
+    background-color: rgba(231, 229, 240, 0.815);
+    padding: 10px;
+}
+
+.committee-area ul{
+    margin: 10px;
+}
+
+.committee-area h2{
+    font-size: 26px;
+    margin: 5px;
+    text-shadow: 1px 1px 1px rgb(138, 134, 130),1px 2px 1px rgb(138, 134, 130);
+}
+
+.committee-area h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px;
+    letter-spacing: 1px;
+    text-underline-position: auto;
+    text-decoration: underline;
+}
+
+.committee-area ul li{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.speakers-area{
+    background: linear-gradient(to right, rgb(0,0,0,0.6),rgb(0,0,0,0.9));
+}
+
+.speakers-area h1{
+    color: white;
+}
+
+.dates-area{
+    background-color: white;
+}
+
+.dates-area p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding-left: 27%;
+}
+
+.contact-area .text-part h1{
+    color: white;
+}
+
+.topic-area p{
+    background: transparent;
+}
+
+
+
+.contact-area{
+    background-image: url(https://wallpaperaccess.com/full/279547.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-area .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+.contact-area .row-1 div,.contact-area .row-2 div{
+    margin-top: 20px;
+}
+
+.contact-area .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+    justify-content: space-evenly;
+}
+
+.contact-area .contact-card{
+    width: 200px;
+    height: 130px;
+    background: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-icon{
+    font-size: 32px;
+    color: #ad4143;
+    transition: .3s linear;
+}
+
+.contact-card:hover .card-icon{
+    transform: scale(4);
+    opacity: 0;
+}
+
+.contact-area .contact-content h3,.contact-area .contact-content h2{
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+}
+
+.contact-card:hover h3{
+    opacity: 1;
+    transition: .3s linear .3s;
+}
+
+.contact-card:hover h2{
+    opacity: 1;
+    transition: .3s linear .3s;
+}
+
+.contact-area .contact-content h3{
+    top: 20px;
+    text-transform: uppercase;
+    color:red;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact-area .contact-content span{
+    padding-left: 30px;
+    color: white;
+}
+
+.contact-area .contact-content #tina-dey{
+    padding-left: 30px;
+}
+
+.contact-area .contact-card #location{
+    color: white;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.contact-area .contact-card .contact-content #email{
+    padding-left: 50px;
+}
+
+.contact-area .contact-card .contact-content #college-mail{
+    padding-left: 23px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact-area h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid rgba(36, 31, 31, 0.87);
+    padding-bottom: 10px;
+}
+
+.contact-area .row-3{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: rgba(66, 38, 194, 0.685);
+    width: 20rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem 0;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(68, 61, 61, 0.39);
+}
+
+.card img{
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 2rem;
+    border: black 1px solid;
+    margin-top: 10px;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.job-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.profile-about{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .card{
+        margin: 2rem;
+        transition: transform 0.5s;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .card:nth-child(1){
+        animation: fadeIn 1s 2.5s backwards 
+    }
+
+    .card:nth-child(2){
+        animation: fadeIn 1s 3.5s backwards;
+    }
+
+    .card:nth-child(3){
+        animation: fadeIn 1s 4.5s backwards;
+    }
+
+    .card:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+.dates-area ol{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.dates-area ol li{
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.dates-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+    padding-bottom: 20px;
+}
+
+.submission-area h2{
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+
+.submission-area ul li{
+    font-weight: 300;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+.submission-area p{
+    background: transparent;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.submission-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    background: rgba(194, 179, 179, 0.596);
+}
+
+.about-area ul{
+    background: rgba(255, 255, 255, 0.637);
+    list-style: none;
+}
+
+.about-area ul li{
+    padding-left: 30px;
+}
+
+.speakers-area h1{
+    border-bottom: white solid 2px;
+}
+
+.registration-area{
+    background-attachment: fixed;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/691/648/1003/chemistry-drugs-molecule-wallpaper-preview.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact-area .row-3{
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.contact-area .contact-form{
+    width: 80%;
+    max-width: 800px;
+    background: #f1f1f1;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact-area .contact-form h2{
+    margin-top: 0;
+    font-weight: 200;
+}
+
+.contact-area .txtb{
+    border: 1px solid grey;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.contact-area .txtb label{
+    display: block;
+    text-align: left;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.contact-area .txtb input, .contact-area .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.contact-area .btn{
+    display: block;
+    background: #9b59b6;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.committee-area{
+    background-image: url(https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
