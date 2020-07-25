@@ -84,6 +84,10 @@ nav.sticky .logo a{
     margin: 5px;
 }
 
+nav.sticky .hamburger div{
+    color: black;
+}
+
 @media screen and (max-width:1024px){
     body{
         overflow-x: hidden;
