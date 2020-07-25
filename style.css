@@ -763,3 +763,11 @@ nav.sticky .logo a{
     background-size: cover;
     background-position: center center;
 }
+
+@media screen and (max-width:1024px){
+    .banner-area .text-part h1{
+        left: 0;
+        width: 90%;
+        font-size: 36px;
+    }
+}
