@@ -85,7 +85,7 @@ nav.sticky .logo a{
 }
 
 nav.sticky .hamburger div{
-    color: black;
+    background-color: black;
 }
 
 @media screen and (max-width:1024px){
