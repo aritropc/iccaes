@@ -92,7 +92,7 @@ nav.sticky .logo a{
         position: absolute;
         z-index: 2;
         right: 0px;
-        height: 90vh;
+        height: 85vh;
         top: 10vh;
         background-color: rgba(231, 229, 240, 0.815);
         display: flex;
@@ -107,6 +107,7 @@ nav.sticky .logo a{
     }
     .hamburger{
         display: block;
+        padding-right: 40px;
     }
 
     .headline{
