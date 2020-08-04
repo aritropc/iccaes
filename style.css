@@ -268,7 +268,7 @@ nav.sticky .hamburger div{
 }
 
 .about-area{
-    background-image: "img\chem1.png";/*https://jooinn.com/images/laboratory-experiment-5.png*/
+    background-image: "\img\chem1.png";/*https://jooinn.com/images/laboratory-experiment-5.png*/
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
