@@ -708,6 +708,10 @@ nav.sticky .hamburger div{
     background-size: cover;
 }
 
+.makebold{
+    font-size: 2rem;
+}
+
 .contact-area .row-3{
     flex-wrap: wrap;
     padding-bottom: 80px;
