@@ -32,6 +32,11 @@ nav{
     text-shadow: 1px 1px 1px rgba(187, 57, 34, 0.829),1px 2px 1px rgba(187, 57, 34, 0.829),1px 3px 1px rgba(187, 57, 34, 0.829),1px 4px 1px rgba(187, 57, 34, 0.829);
 }
 
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+
 .logo a:hover{
     background: rgba(114, 110, 131, 0.692);
     border-radius: 5px;
@@ -277,7 +282,7 @@ nav.sticky .hamburger div{
 }
 
 .about-area{
-    background-image: "\img\chem1.png";/*https://jooinn.com/images/laboratory-experiment-5.png*/
+    background-image: "https://jooinn.com/images/laboratory-experiment-5.png";/*https://jooinn.com/images/laboratory-experiment-5.png*/
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
