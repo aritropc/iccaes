@@ -742,6 +742,10 @@ nav.sticky .hamburger div{
     padding-bottom: 80px;
 }
 
+.contact-area .contact-card{
+    width: 10rem;
+}
+
 .contact-area .contact-form{
     width: 80%;
     max-width: 800px;
