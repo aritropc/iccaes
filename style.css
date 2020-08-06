@@ -417,11 +417,12 @@ nav.sticky .hamburger div{
 
 .dates-area{
     background-color: white;
+    padding-left: 4rem;
 }
 
 .dates-area p{
     font-family: 'PT Sans Narrow', sans-serif;
-    padding-left: 27%;
+    padding-left: 35%;
 }
 
 .contact-area .text-part h1{
