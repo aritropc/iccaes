@@ -572,6 +572,7 @@ nav.sticky .hamburger div{
 .card{
     background-color: rgba(66, 38, 194, 0.685);
     width: 20rem;
+    min-height: 900px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -607,6 +608,10 @@ nav.sticky .hamburger div{
     font-size: 1rem;
     font-style: italic;
     margin: 0.5rem 0;
+}
+
+.ex{
+    min-height: 448px;
 }
 
 
