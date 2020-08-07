@@ -319,7 +319,6 @@ nav.sticky .hamburger div{
 
 .text-part p{
     font-size: 25px;
-    padding: 8px;
     background-color: rgba(255, 255, 255, 0.514);
 }
 
@@ -446,12 +445,10 @@ nav.sticky .hamburger div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 110px;
     padding-bottom: 60px;
 }
 
 .contact-area .row-1 div,.contact-area .row-2 div{
-    margin-top: 20px;
 }
 
 .contact-area .row-2{
@@ -548,13 +545,43 @@ nav.sticky .hamburger div{
     font-family: monospace;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 2px;
     margin-bottom: 45px;
     color: white;
     text-align: center;
     border-bottom: 2px solid rgba(36, 31, 31, 0.87);
     padding-bottom: 10px;
+}
+.contact-area h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(36, 31, 31, 0.87);
+}
+
+contact-area p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(36, 31, 31, 0.87);
 }
 
 .contact-area .row-3{
@@ -751,7 +778,6 @@ nav.sticky .hamburger div{
     width: 80%;
     max-width: 800px;
     background: #f1f1f1;
-    padding: 30px 40px;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
