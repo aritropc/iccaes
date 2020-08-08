@@ -545,7 +545,7 @@ nav.sticky .hamburger div{
     padding-top: 80px;
     font-family: monospace;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 800;
     font-size: 50px;
     letter-spacing: 2px;
     margin-bottom: 45px;
@@ -560,29 +560,29 @@ nav.sticky .hamburger div{
     justify-content: center;
     font-family: monospace;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 40px;
     letter-spacing: 2px;
     color: white;
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 5px;
-    border-bottom: 2px solid rgba(36, 31, 31, 0.87);
+    border-bottom: 3px solid rgba(248, 248, 248, 0.87);
+    border-width: 25% !important;
 }
 
-contact-area p{
+.contact-p{
     align-items: center;
     display: flex;
     justify-content: center;
     font-family: monospace;
     text-transform: uppercase;
-    font-weight: 800;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 30px;
     letter-spacing: 2px;
-    color: black;
+    color:white;
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid rgba(36, 31, 31, 0.87);
 }
 
 .contact-area .row-3{
