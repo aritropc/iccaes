@@ -881,6 +881,13 @@ nav.sticky .hamburger div{
     background-color: #555;
   }
 
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
 @media screen and (max-width:1024px){
     .banner-area .text-part h1{
         left: 0;
