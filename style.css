@@ -886,8 +886,8 @@ footer {
     padding: 3px;
     background-color: rgb(107, 0, 0);
     color: white;
-       
-  }
+}
+
 
 @media screen and (max-width:1024px){
     .banner-area .text-part h1{
