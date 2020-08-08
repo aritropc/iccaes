@@ -881,6 +881,7 @@ nav.sticky .hamburger div{
   }
 
 footer {
+    font-size: medium;
     height: 4rem;
     text-align: center;
     padding: 3px;
