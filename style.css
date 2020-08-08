@@ -21,6 +21,7 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 2;
+    background: rgb(231, 229, 240);
     font-family: 'Poppins', sans-serif;
     transition: 0.4s;
 }
