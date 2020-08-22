@@ -893,11 +893,12 @@ footer {
 
 .col
 {
+    height: 8rem;
     width: 50%;
     float: left;    
     text-align: center;
     text-decoration: none;
-
+    align-content: center;
 }
 
 .lc
