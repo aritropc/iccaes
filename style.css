@@ -600,8 +600,9 @@ nav.sticky .hamburger div{
 .card{
     background-color: rgba(66, 38, 194, 0.685);
     width: 20rem;
-    min-height: 922px;
+    min-height: 27em;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
