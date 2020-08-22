@@ -34,14 +34,15 @@ nav{
 }
 
 .logo img{
-    width: 200px;
-    height: 80px;
+    width: 100px;
+    /*height: 50px;*/
 }
 
-.logo a:hover{
-    background: rgba(114, 110, 131, 0.692);
-    border-radius: 5px;
-    padding: 5px;
+.logo img:hover{
+    /*background: rgba(114, 110, 131, 0.692);*/
+    transform: scale(1.1);
+    transition-duration: 1s;
+    
 }
 
 .nav-links{
